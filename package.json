@@ -1,0 +1,30 @@
+{
+  "name": "lumen-design-system",
+  "version": "1.0.0",
+  "description": "Lumen — React components, design tokens, and styles used on isabelshic.com",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./styles/lumen.css": "./styles/lumen.css",
+    "./design-system.json": "./design-system.json"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "files": [
+    "src",
+    "styles",
+    "README.md",
+    "FILES.md",
+    "PUBLISH.md",
+    "design-system.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isabelshic/lumen-design-system.git"
+  },
+  "license": "UNLICENSED",
+  "author": "Isabel Shic"
+}

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json.schemastore.org/style-dictionary.json",
+  "meta": {
+    "name": "Portfolio 2026 Design System",
+    "version": "1.0.0",
+    "source": "Figma node 1:11"
+  },
+  "tokens": {
+    "color": {
+      "black": { "value": "#101010" },
+      "white": { "value": "#ffffff" },
+      "gray-1": { "value": "#606060" },
+      "gray-2": { "value": "#b6b6b6" },
+      "gray-3": { "value": "#ededed" },
+      "green": { "value": "#3ad759" }
+    },
+    "typography": {
+      "font-family": {
+        "ui": { "value": "Inter, sans-serif" },
+        "display": { "value": "Nunito, sans-serif" },
+        "mono": { "value": "'IBM Plex Mono', monospace" }
+      },
+      "font-size": {
+        "xs": { "value": "14px" },
+        "lg": { "value": "32px" }
+      },
+      "font-weight": {
+        "light": { "value": 300 },
+        "regular": { "value": 400 },
+        "semibold": { "value": 600 }
+      },
+      "line-height": {
+        "default": { "value": 1.25 }
+      }
+    },
+    "spacing": {
+      "2xs": { "value": "4px" },
+      "xs": { "value": "8px" },
+      "sm": { "value": "14px" },
+      "md": { "value": "16px" },
+      "lg": { "value": "24px" },
+      "xl": { "value": "32px" },
+      "2xl": { "value": "36px" },
+      "3xl": { "value": "48px" },
+      "4xl": { "value": "72px" }
+    },
+    "size": {
+      "dot": { "value": "6px" },
+      "logo": { "value": "31px" },
+      "content-max-width": { "value": "1287px" }
+    },
+    "border": {
+      "width": { "thin": { "value": "1px" } },
+      "radius": { "pill": { "value": "9999px" } }
+    }
+  },
+  "components": {
+    "top-nav": {
+      "height": "31px",
+      "link-gap": "{tokens.spacing.3xl.value}",
+      "button-padding": "8px 14px",
+      "button-colors": {
+        "text": "{tokens.color.white.value}",
+        "background": "{tokens.color.black.value}"
+      }
+    },
+    "hero": {
+      "title-max-width": "800px",
+      "title-size": "{tokens.typography.font-size.lg.value}",
+      "label-size": "{tokens.typography.font-size.xs.value}",
+      "section-tab-height": "49px"
+    },
+    "work-card": {
+      "column-gap": "{tokens.spacing.xl.value}",
+      "stack-gap": "{tokens.spacing.xl.value}",
+      "image-placeholder-color": "{tokens.color.gray-3.value}",
+      "title-size": "{tokens.typography.font-size.xs.value}",
+      "body-size": "{tokens.typography.font-size.xs.value}"
+    },
+    "footer": {
+      "padding-y": "{tokens.spacing.xl.value}",
+      "top-border-color": "{tokens.color.gray-3.value}",
+      "nav-gap": "{tokens.spacing.3xl.value}"
+    }
+  },
+  "layout": {
+    "desktop": {
+      "container-width": "{tokens.size.content-max-width.value}",
+      "container-offset-top": "71px",
+      "main-sections-gap": "{tokens.spacing.4xl.value}",
+      "work-columns": 3
+    },
+    "tablet": {
+      "breakpoint": "960px",
+      "work-columns": 1
+    }
+  },
+  "usage-guidelines": {
+    "colors": [
+      "Use black for primary text and emphasis.",
+      "Use gray-2 for secondary metadata, gray-1 for body copy, gray-3 for separators/placeholders.",
+      "Reserve green for small accent indicators (status bullets)."
+    ],
+    "typography": [
+      "Use display font only for hero-level messaging.",
+      "Use ui font for navigation, metadata, and card copy.",
+      "Use mono font for all uppercase utility labels."
+    ],
+    "spacing": [
+      "Prefer the spacing scale; avoid arbitrary pixel values.",
+      "Use 24px and 32px as the default vertical rhythm in content lists."
+    ]
+  }
+}
